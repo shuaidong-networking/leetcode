@@ -12,7 +12,7 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 */
-#include<stdio.h>
+#include "iostream"
 #include <vector>
 using namespace std;
 
@@ -22,7 +22,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
     for(int i=0; i<len; i++){
         for(int j = i+1; j < len; j++){
             if (nums[j] == target - nums[i])
-                return {i,j};
+                std::cout << i<<" " << j << std::endl;
                 
         }
     }
